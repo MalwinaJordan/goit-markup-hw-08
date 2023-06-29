@@ -1,0 +1,153 @@
+.footer {
+    width: 1600px;
+    height: 252px;
+    background: #2F303A;
+    padding-top: 60px;
+    margin: 0px;
+
+    &__title {
+        display: flex;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+    }
+    }
+
+.footer-main {
+    display: flex;
+    justify-content: flex-start;
+
+    &__address {
+        display: block;
+        justify-content: flex-start;
+        margin-right: 70px;
+    }
+
+    &__logo {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 100%;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+    }
+
+    &__location {
+        font-size: 14px;
+        line-height: 171%;
+        color: #FFFFFF;
+        letter-spacing: 0.03em;
+    }
+
+    &__tel {
+        font-size: 14px;
+        line-height: 171%;
+        color: rgba(255, 255, 255, 0.6);
+        letter-spacing: 0.03em;
+    }
+
+    &__email {
+        font-size: 14px;
+        line-height: 171%;
+        color: rgba(255, 255, 255, 0.6);
+        letter-spacing: 0.03em;
+        text-decoration-line: underline;
+    }
+}
+
+.join-us {
+    display: block;
+
+    &__social-media {
+        display: flex;
+        gap: 10px;
+
+        &--icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            border: none;
+            border-radius: 22px;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.1);
+            fill: #FFFFFF;
+
+            &:hover, &:focus {
+                fill: #FFFFFF;
+                background-color: #2196F3;
+            }
+        }
+    }
+    }
+
+.sign-up {
+    display: block;
+    justify-content: center;
+    gap: 12px;
+    margin-left: 78px;
+
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        position: relative;
+
+        &--newsletter {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 200px;
+            height: 50px;
+            background-color: #2196F3;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            color: #ffffff;
+            cursor: pointer;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 188%;
+            padding-left: 42px;
+        }
+    }
+    & input[type=email] {
+        display: flex;
+        align-items: center;
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        background-color: #2F303A;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        padding-left: 16px;
+    }
+
+    & svg {
+        fill: #fff;
+        margin-right: 28px;
+    }
+
+    &__icon {
+        display: flex;
+        position: absolute;
+        fill: #212121;
+        margin-top: 12px;
+        margin-left: 11px;
+    }
+}
+
+.newsletter-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}

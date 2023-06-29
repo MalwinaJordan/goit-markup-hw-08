@@ -1,0 +1,33 @@
+.clients {
+    margin-bottom: 94px;
+
+    &__main {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 94px;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+
+        &--logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 170px;
+            height: 92px;
+            border: 1px solid #AFB1B8;
+            border-radius: 4px;
+            fill: #AFB1B8;
+
+            &:hover {
+                border-color: #2196F3;
+                border-radius: 4px; 
+                fill: #2196F3
+            }
+        }
+    }
+}

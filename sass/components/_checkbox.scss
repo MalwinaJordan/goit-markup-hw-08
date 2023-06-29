@@ -1,0 +1,46 @@
+.checkbox {
+    width: 16px;
+    height: 15px;
+    position: relative;
+    visibility: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0;
+
+    &__checked {
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        visibility: hidden;
+        pointer-events: none;
+
+        &:checked {
+            background-image: url(/images/icons-checkbox.svg#icon-icon-checked-checkbox);
+            z-index: 10;
+        }
+    }
+
+    &__unchecked {
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+.checkbox:checked ~ .checkbox__checked {
+    visibility: visible;
+    background: red;
+}
+
+.checkbox:checked {
+    background-image: url(/images/icons-checkbox.svg#icon-icon-checked-checkbox);
+    z-index: 10;
+}
+
+.checkbox:not(:checked) ~ .checkbox__unchecked {
+    visibility: visible;
+}
