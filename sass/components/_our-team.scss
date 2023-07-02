@@ -27,8 +27,6 @@
       flex-direction: row;
       flex-wrap: wrap;
       gap: 30px;
-      margin-left: 10px;
-      margin-right: 10px;
     }
 
     @include desktop {
@@ -47,6 +45,13 @@
       border-radius: 0px 0px 4px 4px;
 
       @include tablet {
+        width: 354px;
+        height: 536px;
+      }
+
+      @include desktop {
+        width: 270px;
+        height: 428px;
       }
     }
 

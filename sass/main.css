@@ -45,6 +45,12 @@ ul {
   }
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/background-main@2x.jpg");
+    background-size: 1200px 376px;
+  }
+}
 .hero {
   display: block;
   justify-content: center;
@@ -294,8 +300,6 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -312,6 +316,18 @@ ul {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team__cards--box {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team__cards--box {
+    width: 270px;
+    height: 428px;
+  }
 }
 .our-team__cards--name {
   color: #212121;
@@ -708,13 +724,27 @@ ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: 536px;
-  top: 221px;
-  width: 528px;
-  height: 581px;
-  background: #FFFFFF;
+  top: 93px;
+  left: 15px;
+  width: 450px;
+  height: 609px;
+  background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    top: 208px;
+    left: 159px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    left: 536px;
+    top: 221px;
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__backdrop {
   display: flex;
@@ -802,20 +832,30 @@ ul {
   font-style: normal;
   max-height: 24px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: #757575;
   margin-left: 55px;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__label--policy {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__label--policy {
+    font-size: 14px;
+  }
+}
 .modal__label--policy p {
-  padding-bottom: 0px;
+  padding-bottom: 4px;
   padding-left: 7px;
 }
 .modal__label--policy a {
   text-decoration: underline;
-  color: #2196F3;
+  color: #2196f3;
 }
 .modal__label__input {
   display: block;
@@ -826,13 +866,13 @@ ul {
   margin-top: 10px;
 }
 .modal__label__input:hover svg {
-  border-color: #2196F3;
-  fill: #2196F3;
+  border-color: #2196f3;
+  fill: #2196f3;
 }
 
 .modal__input:hover svg {
-  border-color: #2196F3;
-  fill: #2196F3;
+  border-color: #2196f3;
+  fill: #2196f3;
 }
 
 .checkbox {
