@@ -24,84 +24,85 @@
   position: fixed;
   background-color: #ffffff;
   inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: block;
   transform: translateX(100%);
+  transition: transformn 250ms;
 
   &__close-btn {
     border: none;
     cursor: pointer;
     position: absolute;
-    right: 15px;
+    right: 10px;
     top: 10px;
+    background: transparent;
 
     &:hover {
       fill: #2196f3;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
+}
 
-  &__list {
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 28px;
+
+  &__nav {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 302px;
     gap: 36px;
-    margin-top: 48px;
-  }
 
-  &__link {
-    color: #212121;
-    font-size: 40px;
-    font-weight: 500;
-    letter-spacing: 0.8px;
+    &--link {
+      color: #212121;
+      font-size: 40px;
+      font-family: Roboto;
+      font-weight: 500;
+      letter-spacing: 0.8px;
 
-    &:hover {
-      color: #2196f3;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover {
+        color: #2196f3;
+      }
     }
   }
 
-  &__contact {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  &__link-tel {
+  &__tel {
     color: #2196f3;
     font-size: 34px;
+    font-family: Roboto;
     font-weight: 500;
     letter-spacing: 0.68px;
+    margin-left: 20px;
   }
 
-  &__link-mail {
-    color: #2196f3;
+  &__mail {
+    color: #757575;
     font-size: 24px;
+    font-family: Roboto;
     font-weight: 500;
     letter-spacing: 0.48px;
+    margin-left: 20px;
   }
 
-  &__social-list {
+  &__socials {
+    margin-left: 20px;
     margin-top: 64px;
     margin-bottom: 48px;
     display: flex;
-    gap: 20px;
-  }
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    gap: 10px;
 
-  &__social-link {
-    color: #2196f3;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0.36px;
-
-    &--line {
-      margin-left: 10px;
-      width: 1px;
-      height: 22px;
-      color: rgba(33, 33, 33, 0.2);
+    &--link {
+      color: #2196f3;
+      font-size: 18px;
+      font-family: Roboto;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0.36px;
     }
   }
 }

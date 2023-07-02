@@ -1,17 +1,27 @@
 .page-nav {
-  display: flex;
-  justify-content: space-between;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    gap: 101px;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 .nav-menu {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   row-gap: 46px;
-  padding-top: 32px;
   margin-left: 0;
 
   &__logo {
@@ -33,7 +43,6 @@
 
 .nav-list {
   display: none;
-  display: flex;
   justify-content: space-between;
   width: 254px;
   font-weight: 500;
@@ -41,6 +50,14 @@
   line-height: 16px;
   font-weight: 500;
   color: #212121;
+
+  @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
+    display: flex;
+  }
 
   &__links {
     color: #212121;
@@ -107,6 +124,7 @@
 
 .nav-contacts {
   display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   width: 321px;
@@ -114,17 +132,32 @@
   padding-bottom: 32px;
   row-gap: 30px;
 
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   &__menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 321px;
     row-gap: 30px;
-    padding-top: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+
+    @include tablet {
+      display: block;
+      padding-right: 15px;
+    }
   }
 
   &__item {
@@ -134,6 +167,10 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+
+    @include tablet {
+      padding-bottom: 10px;
+    }
   }
 
   &__link {

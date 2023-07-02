@@ -5,21 +5,18 @@ body {
   color: $defaultFontColor;
 }
 
-h2 {
-  font-weight: $h2FontWeight;
-  font-size: $h2FontSize;
-  line-height: $h2LineHeight;
-  text-align: $h2TextAlign;
-  letter-spacing: $h2LetterSpacing;
-  color: $defaultFontColor;
-}
-
 a {
   text-decoration: $defaultTextDecoration;
 }
 p {
   margin: $defaultMargin;
   padding: $defaultPadding;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -35,10 +32,10 @@ ul {
   padding: 0 15px;
 
   @include tablet {
-    max-width: 768px;
+    min-width: 768px;
   }
 
   @include desktop {
-    max-width: 1200px;
+    min-width: 1200px;
   }
 }

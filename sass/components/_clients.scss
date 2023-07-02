@@ -1,33 +1,35 @@
 .clients {
-    margin-bottom: 94px;
+  margin-bottom: 94px;
 
-    &__main {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-        padding-top: 94px;
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &--logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      height: 92px;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+      fill: #afb1b8;
+
+      &:hover {
+        border-color: #2196f3;
+        border-radius: 4px;
+        fill: #2196f3;
+      }
     }
-
-    &__icons {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 50px;
-
-        &--logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 170px;
-            height: 92px;
-            border: 1px solid #AFB1B8;
-            border-radius: 4px;
-            fill: #AFB1B8;
-
-            &:hover {
-                border-color: #2196F3;
-                border-radius: 4px; 
-                fill: #2196F3
-            }
-        }
-    }
+  }
 }

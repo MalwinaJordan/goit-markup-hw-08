@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +22,7 @@
 
     <style>
       body {
+        overflow-x: hidden;
         font-family: Roboto, sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -47,7 +48,6 @@
               <use href="./images/mobile-menu-icon.svg#icon-menu_24px"></use>
             </svg>
           </button>
-
           <ul class="nav-list">
             <li>
               <a class="nav-list__links--agency" href="index.html">Agencja</a>
@@ -73,9 +73,10 @@
             </li>
             <li class="nav-contacts__item">
               <a class="nav-contacts__link" href="tel:48111111111">
-                <svg class="nav-contacts__icon" width="10px" height="12px">
-                  <use href="images/icons.svg#icon-smartphone"></use></svg
-                >+48 111 111 111
+                <svg class="nav-contacts__icon" width="16px" height="16px">
+                  <use href="images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111
               </a>
             </li>
           </ul>
@@ -85,129 +86,128 @@
     <main>
       <!--HERO-->
 
-      <section class="hero">
-        <div class="hero__container">
-          <div class="hero__title">
-            <h1 class="hero__title--h1">
-              EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-            </h1>
-          </div>
+      <div class="hero">
+        <div class="container">
+          <h1 class="hero__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
 
-          <div class="order-button">
-            <button data-modal-open class="order-button__main" type="button">
-              Zamów usługę
-            </button>
-          </div>
+          <button data-modal-open class="order-button__main" type="button">
+            Zamów usługę
+          </button>
         </div>
-      </section>
+      </div>
 
+      <!--LOREM-->
       <section>
         <div class="container">
-          <ul class="lorem-list">
-            <li>
-              <div class="lorem-list__box">
-                <div class="lorem-list__icon">
-                  <svg width="70px" height="70px">
-                    <use href="images/icons.svg#icon-antenna-1"></use>
-                  </svg>
+          <div class="lorem">
+            <ul class="lorem__list">
+              <li class="lorem__list--item">
+                <div class="lorem__list--box">
+                  <div class="lorem__list--icon">
+                    <svg width="70px" height="70px">
+                      <use href="images/icons.svg#icon-antenna-1"></use>
+                    </svg>
+                  </div>
+                  <h3 class="lorem__list--title">LOREM IPSUM</h3>
+                  <p class="lorem__list--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                  </p>
                 </div>
-                <h3 class="lorem-list__title">LOREM IPSUM</h3>
-                <p class="lorem-list__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="lorem-list__box">
-                <div class="lorem-list__icon">
-                  <svg width="70px" height="70px">
-                    <use href="images/icons.svg#icon-clock-1"></use>
-                  </svg>
+              </li>
+              <li class="lorem__list--item">
+                <div class="lorem__list--box">
+                  <div class="lorem__list--icon">
+                    <svg width="70px" height="70px">
+                      <use href="images/icons.svg#icon-clock-1"></use>
+                    </svg>
+                  </div>
+                  <h3 class="lorem__list--title">LOREM IPSUM</h3>
+                  <p class="lorem__list--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                  </p>
                 </div>
-                <h3 class="lorem-list__title">LOREM IPSUM</h3>
-                <p class="lorem-list__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="lorem-list__box">
-                <div class="lorem-list__icon">
-                  <svg width="70px" height="70px">
-                    <use href="images/icons.svg#icon-diagram-1"></use>
-                  </svg>
+              </li>
+              <li class="lorem__list--item">
+                <div class="lorem__list--box">
+                  <div class="lorem__list--icon">
+                    <svg width="70px" height="70px">
+                      <use href="images/icons.svg#icon-diagram-1"></use>
+                    </svg>
+                  </div>
+                  <h3 class="lorem__list--title">LOREM IPSUM</h3>
+                  <p class="lorem__list--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                  </p>
                 </div>
-                <h3 class="lorem-list__title">LOREM IPSUM</h3>
-                <p class="lorem-list__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="lorem-list__box">
-                <div class="lorem-list__icon">
-                  <svg width="70px" height="70px">
-                    <use href="images/icons.svg#icon-astronaut-1"></use>
-                  </svg>
+              </li>
+              <li class="lorem__list--item">
+                <div class="lorem__list--box">
+                  <div class="lorem__list--icon">
+                    <svg width="70px" height="70px">
+                      <use href="images/icons.svg#icon-astronaut-1"></use>
+                    </svg>
+                  </div>
+                  <h3 class="lorem__list--title">LOREM IPSUM</h3>
+                  <p class="lorem__list--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                  </p>
                 </div>
-                <h3 class="lorem-list__title">LOREM IPSUM</h3>
-                <p class="lorem-list__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                </p>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!--O NAS-->
       <section>
-        <div class="container">
-          <div class="about-us__title">
-            <h2>Czym się zajmujemy</h2>
+        <div class="about-us">
+          <div class="container">
+            <div class="about-us__title">
+              <h2>Czym się zajmujemy</h2>
+            </div>
+            <ul class="about-us__services">
+              <li class="about-us__services--item">
+                <img
+                  class="about-us__img"
+                  src="images/o_nas.jpg"
+                  alt="osoba pracująca na tablecie i komputerze"
+                  width="370"
+                  height="294"
+                />
+                <div class="about-us__text-box">
+                  <p class="about-us__text-box--text">Aplikacje komputerowe</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  class="about-us__img"
+                  src="images/o_nas_1.jpg"
+                  alt="osoba pracująca na telefonie komórkowym i laptopie"
+                  width="370"
+                  height="294"
+                />
+                <div class="about-us__text-box">
+                  <p class="about-us__text-box--text">Aplikacje mobilne</p>
+                </div>
+              </li>
+              <li>
+                <img
+                  class="about-us__img"
+                  src="images/o_nas_2.jpg"
+                  alt="osoba pracująca na tablecie"
+                  width="370"
+                  height="294"
+                />
+                <div class="about-us__text-box">
+                  <p class="about-us__text-box--text">Rozwiązania graficzne</p>
+                </div>
+              </li>
+            </ul>
           </div>
-          <ul class="about-us__services">
-            <li>
-              <img
-                class="about-us__img"
-                src="images/o_nas.jpg"
-                alt="osoba pracująca na tablecie i komputerze"
-                width="370"
-                height="294"
-              />
-              <div class="about-us__text-box">
-                <p class="about-us__text-box--text">Aplikacje komputerowe</p>
-              </div>
-            </li>
-            <li>
-              <img
-                class="about-us__img"
-                src="images/o_nas_1.jpg"
-                alt="osoba pracująca na telefonie komórkowym i laptopie"
-                width="370"
-                height="294"
-              />
-              <div class="about-us__text-box">
-                <p class="about-us__text-box--text">Aplikacje mobilne</p>
-              </div>
-            </li>
-            <li>
-              <img
-                class="about-us__img"
-                src="images/o_nas_2.jpg"
-                alt="osoba pracująca na tablecie"
-                width="370"
-                height="294"
-              />
-              <div class="about-us__text-box">
-                <p class="about-us__text-box--text">Rozwiązania graficzne</p>
-              </div>
-            </li>
-          </ul>
         </div>
       </section>
 
@@ -222,8 +222,8 @@
                 <img
                   src="images/nasz_zespol_1.jpg"
                   alt="uśmiechający się męzczyzna w okularach i brązowej koszuli"
-                  width="270"
-                  height="260"
+                  width="450"
+                  height="460"
                 />
                 <h3 class="our-team__cards--name">John Doe</h3>
                 <p class="our-team__cards--position">Product Designer</p>
@@ -244,7 +244,7 @@
                       <use href="images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </div>
-                  <div class="sour-team__cards--icon">
+                  <div class="our-team__cards--icon">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-linkedin-1"></use>
                     </svg>
@@ -258,8 +258,8 @@
                 <img
                   src="images/nasz_zespol_2.jpg"
                   alt="uśmiechająca się blondynka w okularach i zakiecie"
-                  width="270"
-                  height="260"
+                  width="450"
+                  height="460"
                 />
                 <h3 class="our-team__cards--name">John Doe</h3>
                 <p class="our-team__cards--position">Frontend Developer</p>
@@ -294,8 +294,8 @@
                 <img
                   src="images/nasz_zespol_3.jpg"
                   alt="uśmiechający się męzczyzna w blękitnej koszuli"
-                  width="270"
-                  height="260"
+                  width="450"
+                  height="460"
                 />
                 <h3 class="our-team__cards--name">John Doe</h3>
                 <p class="our-team__cards--position">Marketing</p>
@@ -330,8 +330,8 @@
                 <img
                   src="images/nasz_zespol_4.jpg"
                   alt="uśmiechający się męzczyzna w okularach i czarnej koszulce"
-                  width="270"
-                  height="260"
+                  width="450"
+                  height="460"
                 />
                 <h3 class="our-team__cards--name">John Doe</h3>
                 <p class="our-team__cards--position">UI Designer</p>
@@ -367,7 +367,7 @@
       <!--CLIENTS-->
       <section class="clients">
         <div class="container">
-          <div class="clients__main">
+          <div class="clients__title">
             <h2>Nasi klienci</h2>
           </div>
 
@@ -418,6 +418,8 @@
         </div>
       </section>
     </main>
+
+    <!--FOOTER-->
 
     <footer class="footer">
       <div class="container">
@@ -480,17 +482,21 @@
 
           <div class="sign-up">
             <p class="footer__title">zapisz się do newslettera</p>
+
             <div class="newsletter-box">
-              <form>
-                <label for="email">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="E-mail"
-                  />
-                </label>
-              </form>
+              <div class="sign-up__form">
+                <form>
+                  <label for="email">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="E-mail"
+                    />
+                  </label>
+                </form>
+              </div>
+
               <div class="sign-up__button">
                 <button
                   data-modal-open
@@ -498,16 +504,18 @@
                   type="submit"
                 >
                   Zapisz się
+                  <svg class="sign-up__icon" width="24px" height="24px">
+                    <use href="images/modal-icons.svg#icon-icon-send"></use>
+                  </svg>
                 </button>
-                <svg class="sign-up__icon" width="24px" height="24px">
-                  <use href="images/modal-icons.svg#icon-icon-send"></use>
-                </svg>
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
+    <!--MODAL-->
 
     <div class="modal__backdrop is-hidden" data-modal>
       <div class="modal">
@@ -612,6 +620,8 @@
       </div>
     </div>
 
+    <!--MOBILE_MENU-->
+
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button type="button" class="menu-container__close-btn js-close-menu">
         <svg width="30" height="30">
@@ -619,50 +629,55 @@
         </svg>
       </button>
 
-      <menu class="menu-container__list">
-        <li>
-          <a class="menu-container__link" href="">Agencja</a>
-        </li>
-        <li>
-          <a class="menu-container__link" href="./portfolio.html">Portfolio</a>
-        </li>
-        <li><a class="menu-container__link" href="">Kontakt</a></li>
-      </menu>
-
-      <div>
-        <ul class="menu-container__contact">
+      <div class="mobile-menu">
+        <ul class="mobile-menu__nav">
           <li>
-            <a class="menu-container__link-tel" href="tel:+48111111111">
-              +48 111 111 111
-            </a>
+            <a class="mobile-menu__nav--link" href="./index.html">Agencja</a>
           </li>
           <li>
-            <a
-              class="menu-container__link-mail"
-              href="mailto:info@devstudio.com"
+            <a class="mobile-menu__nav--link" href="./portfolio.html"
+              >Portfolio</a
             >
-              info@devstudio.com</a
-            >
+          </li>
+          <li>
+            <a class="mobile-menu__nav--link" href="./index.html">Kontakt</a>
           </li>
         </ul>
+      </div>
 
-        <ul class="menu-container__social-list">
+      <div class="mobile-menu">
+        <a class="mobile-menu__tel" href="tel:+48111111111">+48 111 111 111</a>
+        <a class="mobile-menu__mail" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+      </div>
+
+      <div class="mobile-menu">
+        <ul class="mobile-menu__socials">
           <li>
-            <a href="#" class="menu-container__social-link">Instagram</a>
-            <span class="menu-container__social-link--line">|</span>
+            <a href="#" class="mobile-menu__socials--link">Instagram</a>
+            <span class="mobile-menu__socials--line">|</span>
           </li>
           <li>
-            <a href="#" class="menu-container__social-link">Twitter</a>
-            <span class="menu-container__social-link--line">|</span>
+            <a href="#" class="mobile-menu__socials--link">Twitter</a>
+            <span class="mobile-menu__socials--line">|</span>
           </li>
           <li>
-            <a href="#" class="menu-container__social-link">Facebook</a>
-            <span class="menu-container__social-link--line">|</span>
+            <a href="#" class="mobile-menu__socials--link">Facebook</a>
+            <span class="mobile-menu__socials--line">|</span>
           </li>
-          <li><a href="#" class="menu-container__social-link">Linkedin</a></li>
+          <li><a href="#" class="mobile-menu__socials--link">Linkedin</a></li>
         </ul>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
